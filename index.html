@@ -2250,6 +2250,54 @@ to{transform:scale(1.015);background:rgba(255,0,0,.98);}
   }
 }
 
+
+/* =========================================
+   FINAL HEADER CLEANUP
+========================================= */
+@media (max-width:768px){
+
+  /* mover timer a la derecha */
+  .game-topbar{
+    display:grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items:center !important;
+  }
+
+  .game-topbar-left{
+    min-width:0 !important;
+    overflow:hidden !important;
+  }
+
+  /* ocultar iconos/palos inútiles */
+  .deck-indicator,
+  .game-session-info .suit-symbol,
+  .game-session-info svg,
+  .game-session-info span:not(.game-session-badge){
+    display:none !important;
+  }
+
+  /* timer totalmente a la derecha */
+  .timer-display{
+    justify-self:end !important;
+    align-items:flex-end !important;
+    text-align:right !important;
+    margin-left:auto !important;
+  }
+
+  .timer-label{
+    font-size:8px !important;
+    letter-spacing:2px !important;
+  }
+
+  .timer-value{
+    font-size:44px !important;
+  }
+
+  .timer-bar-wrap{
+    width:110px !important;
+  }
+}
+
 </style>
 </head>
 <body>
